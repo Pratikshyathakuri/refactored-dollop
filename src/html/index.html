@@ -1,12 +1,36 @@
 <html>
-    <h1>Hello, This is My Webpage </h1>
-    <form method="get" action="/submit">
-        <label>Name</label>
-        <input name="name" id="name"> <br>
-        <label>Email</label>
-        <input name="email" id="email"><br>
-        <label>Phone No.</label>
-        <input name="phone" id="age"><br>
-        <input type="submit">
-    </form>
+
+<head>
+    <title>Pratikshya</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Please Enter Your Info For Rewards</h1>
+        <form method="get" action="/submit">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="name" id="name" class="form-control" placeholder="Enter Your Name">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input name="email" id="email" class="form-control" placeholder="Enter Your Email">
+            </div>
+            <div  class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                <input name="phone" id="age" class="form-control" placeholder="Enter Your Phone No.">
+            </div>
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
 </html>

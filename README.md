@@ -16,3 +16,12 @@ git add .
 git commit -m "message"
 git push
 ```
+
+Delpoy on Linux Server <br>
+
+```
+sudo apt-get update
+sudo apt-get install git-core
+sudo apt install nodejs
+sudo apt-get install npm
+```
