@@ -20,15 +20,17 @@ app.get('/about', function(req, res){
 
 app.get('/submit', function(req, res){
     let name = req.query.name;
+    let email = req.query.email;
     let phone = req.query.phone;
     let text = 'Name : ' + name + '\nPhone : ' + phone;
+    
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: { user :  'finapp.lsbdc@gmail.com', pass: 'racoons@1'}
        });
      transporter.sendMail({
          from: 'finapp.lsbdc@gmail.com',
-         to : 'thakuripratikshya1@gmail.com',
+         to : email,
          subject: 'User\'s Phone Number',
          text : text
      });
