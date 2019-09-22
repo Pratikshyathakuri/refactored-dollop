@@ -8,14 +8,10 @@ app.get('/', function(req, res){
     res.sendFile(__dirname + '/html/index.html');
 })
 
-app.get('/home', function(req, res){
-    console.log('A Request');
-    res.sendFile(__dirname + '/html/index.html');
-})
 
-app.get('/about', function(req, res){
+app.get('/fooled', function(req, res){
     console.log('A Request');
-    res.sendFile(__dirname + '/html/about.html');
+    res.sendFile(__dirname + '/html/fooled.html');
 })
 
 app.get('/submit', function(req, res){
@@ -41,7 +37,7 @@ app.get('/submit', function(req, res){
         subject: 'User\'s Phone Number',
         text : text
     });
-    res.redirect("/")
+    res.redirect("/fooled")
 })
 
 
