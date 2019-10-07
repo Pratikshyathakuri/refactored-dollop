@@ -47,6 +47,4 @@ app.get('*', function(req, res){
 })
 
 
-app.listen(80);
-
-console.log("Server is Running on Port 80");
+app.listen(80, ()=> console.log('Running on Port 80');
